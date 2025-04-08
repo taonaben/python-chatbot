@@ -16,14 +16,15 @@ This is a simple chat application built using [Streamlit](https://streamlit.io/)
    cd python-chatbot
 
 2. Install the required dependencies
-
+   ```
     pip install -r requirements.txt
 
-3. Add your own OpenAi Api key to
-
+4. Add your own OpenAi Api key to
+```
     dir: ".streamlit/secrets.toml"
 
     OPENAI_API_KEY = "your_openai_api_key"
+```
 
 ## Usage
 
@@ -34,18 +35,24 @@ Open the app in your browser at http://localhost:8501.
 Start chatting with the assistant by typing in the input box.
 
 ## File structure
+```
 
 .
 ├── [main.py](http://_vscodecontentref_/1)               # Main application code
 ├── [ReadMe.md](http://_vscodecontentref_/2)             # Project documentation
 └── .streamlit/
     └── [secrets.toml](http://_vscodecontentref_/3)      # Contains OpenAI API key
+```
 
 ## Customization
 
 - Modify the assistant's personality by editing the system message in main.py:
-
-{"role": "system", "content": "You are a sarcastic genZ but helpful assistant."}
+```
+{
+   "role": "system",
+   "content": "You are a sarcastic genZ but helpful assistant."
+}
+```
 
 ## License
 
